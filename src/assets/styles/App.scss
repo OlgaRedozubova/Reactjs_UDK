@@ -1,0 +1,18 @@
+@import "./base/_base.scss";
+@import "./components/_header.scss";
+@import "blocks/_box.scss";
+@import "modules/_home.scss";
+@import "modules/_gazbetonUDK.scss";
+
+.App {
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

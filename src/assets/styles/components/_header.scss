@@ -1,0 +1,65 @@
+.header {
+  &__top {
+    background-color: $greyDark;
+    color: $yelow;
+    padding: 7px 0;
+    ul {
+      list-style: none;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      li {
+        margin-right: 15px;
+        display: flex;
+        &:last-child {
+          margin-right: 0;
+        }
+        .icon-telephone-regular{
+          color: $white;
+          margin-right: 5px;
+          font-size: 12px;
+        }
+      }
+
+    }
+  }
+  color:  $greyDark;
+  background-color: $yelow;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  &__wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__leftCol {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    //   animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  &__title {
+    font-size: 1.5em;
+  }
+  &__nav {
+    display: flex;
+    .selected{
+      border-bottom: 1px solid #ffcb05;
+    }
+    a {
+      text-decoration: none;
+      margin-right: 15px;
+      color: $greyDark;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header__top ul li {
+  margin-right: 10px;
+}
+}

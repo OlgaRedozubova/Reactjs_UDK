@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Poppins-Regular.eot") format("eot"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype"), url("../fonts/Poppins-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Ubuntu-Regular.eot") format("eot"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Ubuntu-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: 'templateocean-font';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/templateocean-font.eot") format("eot"), url("../fonts/templateocean-font.woff") format("woff"), url("../fonts/templateocean-font.ttf") format("truetype"), url("../fonts/templateocean-font.svg") format("svg"); }
+
+.wrapper {
+  max-width: 1200px; }
+
+.icon {
+  /*overflow: hidden;*/
+  font-size: 55px;
+  height: 55px; }
+  .icon.yelow {
+    color: #feda00 !important; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "templateocean-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-money-regular:before {
+  content: "\e0a2"; }
+
+.icon-basic-clock:before {
+  content: "\e00d"; }
+
+.icon-check:before {
+  content: "\e04b"; }
+
+.icon-phone:before {
+  content: "\e07e"; }
+
+.icon-telephone-regular:before {
+  content: "\e13f"; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+button, a {
+  text-decoration: none; }
+
+body, a {
+  line-height: 1;
+  font-family: 'Ubuntu-Regular'; }
+
+h1 {
+  font-family: 'Ubuntu-Regular';
+  font-size: 55px;
+  color: white;
+  line-height: 1.417; }
+
+h2 {
+  font-family: 'Ubuntu-Regular';
+  font-size: 30px;
+  color: #656565;
+  font-weight: 600;
+  line-height: 1.6; }
+
+h3 {
+  font-size: 30px;
+  font-family: "Ubuntu-Regular";
+  line-height: 48px;
+  font-weight: 400;
+  color: #656565; }
+
+h4 {
+  font-size: 25px;
+  font-family: "Ubuntu-Regular";
+  line-height: 40px;
+  font-weight: 400;
+  color: #656565; }
+
+h5 {
+  font-size: 20px;
+  font-family: "Ubuntu-Regular";
+  line-height: 33px;
+  font-weight: 500;
+  color: #656565; }
+
+h6 {
+  font-size: 18px;
+  font-family: "Ubuntu-Regular";
+  line-height: 26px;
+  font-weight: 500;
+  color: #656565; }
+
+p {
+  font-size: 12px;
+  font-family: "Ubuntu-Regular";
+  line-height: 1.2; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.header {
+  color: #333333;
+  background-color: #feda00;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+  .header__top {
+    background-color: #333333;
+    color: #feda00;
+    padding: 7px 0; }
+    .header__top ul {
+      list-style: none;
+      display: flex;
+      flex: 1;
+      justify-content: center; }
+      .header__top ul li {
+        margin-right: 15px;
+        display: flex; }
+        .header__top ul li:last-child {
+          margin-right: 0; }
+        .header__top ul li .icon-telephone-regular {
+          color: white;
+          margin-right: 5px;
+          font-size: 12px; }
+  .header__wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header__leftCol {
+    display: flex;
+    flex-direction: column; }
+  .header__logo {
+    height: 80px; }
+  .header__title {
+    font-size: 1.5em; }
+  .header__nav {
+    display: flex; }
+    .header__nav .selected {
+      border-bottom: 1px solid #ffcb05; }
+    .header__nav a {
+      text-decoration: none;
+      margin-right: 15px;
+      color: #333333; }
+
+@media screen and (max-width: 768px) {
+  .header__top ul li {
+    margin-right: 10px; } }
+
+.box {
+  width: 33%;
+  min-height: 140px;
+  padding: 15px;
+  margin-bottom: 15px;
+  min-width: 200px;
+  max-width: 265px;
+  overflow: hidden;
+  text-align: center;
+  color: #feda00;
+  background: rgba(38, 39, 50, 0.5); }
+  .box .icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: #000 0 0 5px; }
+  .box__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #feda00;
+    text-shadow: #000 0 0 5px; }
+  .box__text {
+    color: white;
+    line-height: 1.2;
+    font-size: 13px; }
+
+.home {
+  position: relative;
+  min-height: 700px;
+  background: url(../images/product_quality.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*&:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgb(38, 39, 50);
+    opacity: 0.6;
+  }*/ }
+  .home .wrapper {
+    flex: 1;
+    min-height: 700px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(38, 39, 50, 0.6); }
+  .home__title {
+    text-align: center;
+    color: white;
+    text-shadow: #000 0 0 5px; }
+  .home__subTitle {
+    text-align: center;
+    font-size: 30px;
+    color: #feda00;
+    font-weight: 600;
+    line-height: 1.4;
+    text-shadow: #000 0 0 5px; }
+    .home__subTitle:last-child {
+      margin-bottom: 15px; }
+  .home__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around; }
+
+.App {
+  text-align: center; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

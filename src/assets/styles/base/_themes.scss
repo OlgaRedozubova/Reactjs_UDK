@@ -1,0 +1,45 @@
+.wrapper {
+  max-width: 1200px;
+//  padding: 15px;
+}
+
+.icon {
+  /*overflow: hidden;*/
+  font-size: 55px;
+  height: 55px;
+  &.yelow {
+    color: $yelow !important
+  }
+}
+
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "templateocean-font" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+.icon-money-regular:before {
+  content: "\e0a2";
+}
+
+.icon-basic-clock:before {
+  content: "\e00d";
+}
+.icon-check:before {
+  content: "\e04b";
+}
+
+.icon-phone:before {
+  content: "\e07e";
+}
+
+.icon-telephone-regular:before {
+  content: "\e13f";
+}
